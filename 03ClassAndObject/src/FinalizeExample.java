@@ -1,2 +1,7 @@
-package PACKAGE_NAME;public class FinalizeExample {
+public class FinalizeExample {
+    String name ="abc";
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("Object is being garbage collected");
+    }
 }
